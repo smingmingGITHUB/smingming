@@ -1,6 +1,9 @@
 # smingming
 happy
+切换分支到dev
 git checkout -b dev origin/dev 依赖于远程分支创建本地分支
+切换到master
+git checkout master
 
 先更新-合并
 git fetch origin master 更新远程分支
