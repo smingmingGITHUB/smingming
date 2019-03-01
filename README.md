@@ -46,3 +46,14 @@ $ ssh-keygen -t rsa -C "自己的邮箱"
 
 
 3. 如果上述指令运行成功，那么会在主目录（home）下生成一个.ssh的隐藏文件夹，按ctrl+h可以显示。点击进入后可以找到两个文件，分别为：id_rsa和id_rsa.pub。这两个文件对应了私密密钥和公开密钥，接下来就是要将公开密钥文件（即id_rsa.pub文件）中的代码复制到github中的“SSH Key”下面，具体过程 见CSDN。
+
+
+echo "# LCD" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/smingmingGITHUB/LCD.git
+git push -u origin master
+
+git pull
+git push
